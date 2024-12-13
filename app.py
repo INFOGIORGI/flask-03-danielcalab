@@ -8,6 +8,7 @@ def home_page():
 
 @app.route("/details")
 def details_page():
-    return render_template("details.html", titolo="Details")
+    prodotti = (("pane", "s1", "1€"), ("carne", "s2", "10€"), ("pesce", "s3", "15€"))
+    return render_template("details.html", titolo="Details", prodotti=prodotti)
 
 app.run()

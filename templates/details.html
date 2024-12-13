@@ -13,5 +13,12 @@
         <th>Scaffale</th>
         <th>Prezzo</th>
     </tr>
+    {%for riga in prodotti%}
+    <tr>
+        <td>{{riga[0]}}</td>
+        <td>{{riga[1]}}</td>
+        <td>{{riga[2]}}</td>
+    </tr>
+    {%endfor%}
 </table>
 {%endblock%}
