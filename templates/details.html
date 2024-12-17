@@ -16,7 +16,7 @@
     {%for riga in prodotti%}
     <tr>
         <td>{{riga[0]}}</td>
-        <td>{{riga[1]}}</td>
+        <td><a href="{{url_for('dettagliscaffale', idS=riga[1])}}">{{riga[1]}}</a></td>
         <td>{{riga[2]}}</td>
     </tr>
     {%endfor%}

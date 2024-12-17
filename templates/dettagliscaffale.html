@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+
+{%block titolo%}{{titolo}}{%endblock%}
+
+{%block contenuto%}
+
+<h1>Dettagli scaffale {{numScaffale}}:</h1>
+
+
+<table>
+    <tr>
+        <th>Prodotto</th>
+        <th>Prezzo</th>
+    </tr>
+{%for i in listaP%}
+    <tr>
+        <td>{{i[0]}}</td>
+        <td>{{i[2]}}</td>
+    </tr>
+{%endfor%}
+</table>
+
+{%endblock%}
